@@ -28,10 +28,10 @@ Open it in a python shell and explore:
 Here is a description of the data structure
 the dict is 7500 (reset not included initally)  nodes (which are also dicts) keyed on a tuple representing the state,  the key is also repeated in the sub-key called 'state'
 
-state: the tuple of the 4 wheels coordinates
-[right|left|up|down]: a reference to the state node reached when a that move is given
-incoming_[right|left|up|down]: a reference to the state before us (if any)  that reaches us via a move
-input_sequences_from_reset: a list of combinations seen to reach this state during the 11 move brute force.
+    state: the tuple of the 4 wheels coordinates
+    [right|left|up|down]: a reference to the state node reached when a that move is given
+    incoming_[right|left|up|down]: a reference to the state before us (if any)  that reaches us via a move
+    input_sequences_from_reset: a list of combinations seen to reach this state during the 11 move brute force.
 
 
 
