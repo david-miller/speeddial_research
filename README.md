@@ -12,16 +12,16 @@ This pickle contains a cyclical graph in the form of a dict that contains refere
 
 Open it in a python shell and explore:
 
-f = open('speeddial5.pickle', 'rb')
-lockspace = pickle.load(f)
-#find all states with (4,-1) as the top gate and (3,0) as the right gate
-a = filter( lambda x: (x[0] == (4,-1)) and (x[1] == (3,0)), lockspace.keys() )
-len(a)
-75
-#get a list of shortest sequence to reach each those 75 states  (overlapping brute force seems not possible here do you disagree?)
-codes.sort(key=len)
-print("  ".join(codes))
-0UUUR  0UURR  0URRR  0LLRRR  0LUUUR  0UUDUR  0LURRR  0UURDR  0URDRR  0LUURR  0UUDRR  0UDURR  0RLLRR  0UUULR  0UDRRR  0URLRR  0UULRR  0ULRRR  0UUUDR  0UURLR  0LUUUDR  0UUDLUR  0DLLRRR  0UUDULR  0UUUDLR  0LLRLRR  0LLDRRR  0UDUDRR  0DLLURR  0DLLUUR  0UUDLRR  0UDLURR  0UUDUDR  0LLLDDRR  0DDLLLUR  0UDDULLR  0UUDUDLR  0UDDLLUR  0LLUDDRR  0UUDDLLR  0UDLLDRR  0DLLRDRR  0LUUUDLR  0LLUDDUR  0DLLLDRR  0UUDLRDR  0DUDLLUR  0UUDLUDR  0DUDLLRR  0UUDLLDR  0UDDLLRR  0DDLLLRR  0LLUUDDR  0LUUDLUR  0DUDLLRUR  0UDDLLLDR  0DDLLLRUR  0DDLLLLDR  0LLLUDDDR  0UUDLUDLR  0UDUDDLLR  0UDDDLLLR  0LUUDDLLR  0LUDDLLUR  0LUUDLUDR  0DUDDLLLR  0LLLLDDDR  0UDDLLUDR  0DDDDDUURR  0LUDLUDLUR  0LUDDLLUDR  0UDDLUDLLR  0DDDDDUUUR  0LUDDLLRUR  0UUUUUDLURRR
+    >>> f = open('speeddial5.pickle', 'rb')
+    >>> lockspace = pickle.load(f)
+    >>> #find all states with (4,-1) as the top gate and (3,0) as the right gate
+    >>> a = filter( lambda x: (x[0] == (4,-1)) and (x[1] == (3,0)), lockspace.keys() )
+    >>> len(a)
+    75
+    >>> #get a list of shortest sequence to reach each those 75 states  (overlapping brute force seems not possible here do you disagree?)
+    >>> codes.sort(key=len)
+    >>> print("  ".join(codes))
+    0UUUR  0UURR  0URRR  0LLRRR  0LUUUR  0UUDUR  0LURRR  0UURDR  0URDRR  0LUURR  0UUDRR  0UDURR  0RLLRR  0UUULR  0UDRRR  0URLRR  0UULRR  0ULRRR  0UUUDR  0UURLR  0LUUUDR  0UUDLUR  0DLLRRR  0UUDULR  0UUUDLR  0LLRLRR  0LLDRRR  0UDUDRR  0DLLURR  0DLLUUR  0UUDLRR  0UDLURR  0UUDUDR  0LLLDDRR  0DDLLLUR  0UDDULLR  0UUDUDLR  0UDDLLUR  0LLUDDRR  0UUDDLLR  0UDLLDRR  0DLLRDRR  0LUUUDLR  0LLUDDUR  0DLLLDRR  0UUDLRDR  0DUDLLUR  0UUDLUDR  0DUDLLRR  0UUDLLDR  0UDDLLRR  0DDLLLRR  0LLUUDDR  0LUUDLUR  0DUDLLRUR  0UDDLLLDR  0DDLLLRUR  0DDLLLLDR  0LLLUDDDR  0UUDLUDLR  0UDUDDLLR  0UDDDLLLR  0LUUDDLLR  0LUDDLLUR  0LUUDLUDR  0DUDDLLLR  0LLLLDDDR  0UDDLLUDR  0DDDDDUURR  0LUDLUDLUR  0LUDDLLUDR  0UDDLUDLLR  0DDDDDUUUR  0LUDDLLRUR  0UUUUUDLURRR
 
 
 
